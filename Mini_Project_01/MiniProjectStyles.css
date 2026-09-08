@@ -1,0 +1,16 @@
+body {
+    background-image: url("VivMai.jpg");
+
+}
+
+h1 {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: black solid 2px;
+    padding-left: 40px;
+}
+sub {
+    vertical-align: sub;
+    font-size: 40%;
+}
