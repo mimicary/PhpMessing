@@ -18,3 +18,20 @@ td, tr {
     color: orangered;
 }
 
+
+#refpic1 {
+    height: 70px;
+    width: 120px;
+}
+
+
+#refpic1:hover {
+    background-image: Image("platy.jpg");
+    height: 70px;
+    width: 120px;
+}
+
+#refpic2 {
+    height: 70px;
+    width: 120px;
+}
