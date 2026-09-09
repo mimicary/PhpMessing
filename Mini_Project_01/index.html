@@ -14,8 +14,56 @@
     <a href="VivMaier.html" id="VivMaiPage"> Vivian Maier</a>
     <br>
     <br>
+    <!-- Trigger/Open The popup -->
+    <button id="Button">Settings</button>
+
+    <!-- The popup -->
+    <div id="thePopup" class="popup">
+
+        <!-- popup content -->
+        <div class="popupContent">
+            <span class="close">&times;</span>
+            <p>TEXT</p>
+        </div>
+    </div>
+        <script>
+            // Get the popup
+            var popup = document.getElementById("thePopup");
+
+            // Get the button that opens the popup
+            var btn = document.getElementById("Button");
+
+            // Get the <span> element that closes the popup
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the popup
+            btn.onclick = function() {
+                popup.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the popup
+            span.onclick = function() {
+                popup.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the popup, close it
+            window.onclick = function(event) {
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
     <br>
-    <p></p>
+    <br>
+    <br>
+    <pre id="intro">
+        Why do people create?
+        Whether it's a small project like a doodle to a lifelong dedication to one project, why does it happen?
+        What compels us as humans to create, destroy and edit art that won't be seen by anyone, sometimes not even themselves?
+        When in the end it shall disappear anyways, consumed by time and forgotten by all.
+    </pre>
+
+
 </body>
 
 </html>
