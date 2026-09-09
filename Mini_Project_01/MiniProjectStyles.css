@@ -56,11 +56,19 @@ sub {
     font-family: Arial;
 
 }
-#DysFontChanging
+.DysFontChanging
 {
     font-family: Arial;
 }
 
+.formBg {
+    background-color: white;
+}
+#ThanksMessage {
+    font-size: xxx-large;
+    text-align: center;
+    background-color: sandybrown;
+}
 /* The popup items */
 .popup {
     display: none; /* Hidden by default */
