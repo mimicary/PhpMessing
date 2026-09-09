@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Introduction</title>
     <link rel="stylesheet" href="MiniProjectStyles.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
 </head>
     <h1>Art With No Audience <sub>Why People Create</sub></h1>
     <hr> <!-- puts a line on page -->
@@ -23,7 +24,12 @@
         <!-- popup content -->
         <div class="popupContent">
             <span class="close">&times;</span>
-            <p>TEXT</p>
+
+            <label class="container" id="DysLabel">Dyslexia Mode
+                <input type="checkbox" id="DyslexiaCheckBx">
+                <span class="checkmark"></span>
+            </label>
+
         </div>
     </div>
         <script>
@@ -46,13 +52,34 @@
                 popup.style.display = "none";
             }
 
-            // When the user clicks anywhere outside of the popup, close it
+            // When the user clicks anywhere outside the popup, close it
             window.onclick = function(event) {
                 if (event.target == popup) {
                     popup.style.display = "none";
                 }
             }
+
         </script>
+
+    <script>
+        var checked=document.getElementById("DyslexiaCheckBx").checked;
+
+        checked?test=true:test=false;
+
+        console.log(checked);
+
+        if (checked == true) {
+            console.log("hi")
+            document.getElementById("DysLabel").style.fontSize = "large";
+        }
+        else {
+            document.getElementById("DysLabel").style.fontSize = "small";
+        }
+
+
+    </script>
+
+
     <br>
     <br>
     <br>
