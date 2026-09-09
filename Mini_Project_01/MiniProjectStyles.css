@@ -9,7 +9,6 @@ a {
     background-color: white;
     border: black solid 2px;
     color: black;
-    font-family: Arial;
     padding: 2px;
     font-size: x-large;
 }
@@ -18,7 +17,6 @@ a:hover {
     background-color: darkblue;
     color: white;
     padding: 4px;
-    font-family: Arial;
 }
 
 h1 {
@@ -34,7 +32,7 @@ p {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 40px;
-    font-family: Arial;
+
 }
 
 pre {
@@ -42,7 +40,7 @@ pre {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 40px;
-    font-family: Arial;
+
 }
 
 #intro {
@@ -55,8 +53,12 @@ sub {
 }
 
 #DysLabel {
-    font-family: "Open-Dyslexic", sans-serif;
+    font-family: Arial;
 
+}
+#DysFontChanging
+{
+    font-family: Arial;
 }
 
 /* The popup items */

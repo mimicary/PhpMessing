@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Introduction</title>
+    <title class="DysFontChanging">Introduction</title>
     <link rel="stylesheet" href="MiniProjectStyles.css">
     <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
 </head>
-    <h1>Art With No Audience <sub>Why People Create</sub></h1>
+    <h1 class="DysFontChanging">Art With No Audience <sub>Why People Create</sub></h1>
     <hr> <!-- puts a line on page -->
 
 <body>
     <br>
-    <a href="VivMaier.html" id="VivMaiPage"> Vivian Maier</a>
+    <a href="VivMaier.html" id="VivMaiPage" class="DysFontChanging"> Vivian Maier</a>
     <br>
     <br>
     <!-- Trigger/Open The popup -->
-    <button id="Button">Settings</button>
+    <button id="Button" class="DysFontChanging">Settings</button>
 
     <!-- The popup -->
     <div id="thePopup" class="popup">
@@ -32,7 +32,7 @@
 
         </div>
     </div>
-        <script>
+    <script>
             // Get the popup
             var popup = document.getElementById("thePopup");
 
@@ -59,21 +59,25 @@
                 }
             }
 
-        </script>
+    </script>
 
     <script>
-        var checked=document.getElementById("DyslexiaCheckBx").checked;
+        var checkbox=document.getElementById("DyslexiaCheckBx");
 
-        checked?test=true:test=false;
+        checkbox.onchange = function() {
+            if (document.getElementById("DyslexiaCheckBx").checked === true){
+                checked = true
+                console.log(checked);
+                document.getElementById("DysLabel").style.fontFamily = "\"Open-Dyslexic\", sans-serif";
+                document.getElementById("DysFontChanging").style.fontFamily = "\"Open-Dyslexic\", sans-serif";
 
-        console.log(checked);
+            } else {
+                checked = false
+                console.log(checked);
+                document.getElementById("DysLabel").style.fontFamily = "Arial";
+                document.getElementById("DysFontChanging").style.fontFamily = "Arial";
 
-        if (checked == true) {
-            console.log("hi")
-            document.getElementById("DysLabel").style.fontSize = "large";
-        }
-        else {
-            document.getElementById("DysLabel").style.fontSize = "small";
+            }
         }
 
 
@@ -83,7 +87,7 @@
     <br>
     <br>
     <br>
-    <pre id="intro">
+    <pre id="intro" class="DysFontChanging">
         Why do people create?
         Whether it's a small project like a doodle to a lifelong dedication to one project, why does it happen?
         What compels us as humans to create, destroy and edit art that won't be seen by anyone, sometimes not even themselves?
