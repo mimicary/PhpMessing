@@ -5,19 +5,8 @@ body {
     background-size: cover;
 }
 
-a {
-    background-color: white;
-    border: black solid 2px;
-    color: black;
-    padding: 2px;
-    font-size: x-large;
-}
 
-a:hover {
-    background-color: darkblue;
-    color: white;
-    padding: 4px;
-}
+
 
 h1 {
     background-color: white;
@@ -69,6 +58,37 @@ sub {
     text-align: center;
     background-color: sandybrown;
 }
+
+nav ul{
+    list-style-type: none; /* removes bullet points and put it on one line */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border: black solid 2px;
+    color: black;
+    font-size: x-large;
+
+}
+
+nav li:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: white;
+}
+
 /* The popup items */
 .popup {
     display: none; /* Hidden by default */
